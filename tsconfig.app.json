@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // 증분 빌드 정보를 저장할 파일 위치
+    "target": "ES2020", // 컴파일될 JavaScript 버전 지정
+    "useDefineForClassFields": true, // 클래스 필드를 정의할 때 최신 문법 사용
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // 사용할 타입 정의 라이브러리
+    "module": "ESNext", // 모듈 시스템 설정 (최신 ES 모듈 사용)
+    "skipLibCheck": true, // 라이브러리 파일의 타입 체크 건너뛰기
+
+    /* Bundler mode */
+    "moduleResolution": "bundler", // 모듈 해석 방식 (번들러 사용)
+    "allowImportingTsExtensions": true, // .ts 확장자 임포트 허용
+    "isolatedModules": true, // 각 파일을 독립적으로 트랜스파일
+    "moduleDetection": "force", // 모든 파일을 모듈로 처리
+    "noEmit": true, // JavaScript 파일 생성하지 않음
+    "jsx": "react-jsx", // React JSX 지원 설정
+
+    /* Linting */
+    "strict": true, // 모든 엄격한 타입 체크 활성화
+    "noUnusedLocals": true, // 사용하지 않는 지역 변수 체크
+    "noUnusedParameters": true, // 사용하지 않는 매개변수 체크
+    "noFallthroughCasesInSwitch": true // switch문에서 break 누락 체크
+  },
+  "include": ["src"]
+}
